@@ -2,7 +2,7 @@
 using AgeVerifierWebApplication.AgeVerifierModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AgeVerfierWebApplication.AgeVerifierControllers
+namespace AgeVerifierWebApplication.AgeVerifierControllers
 {
     [Route("api/[AgeVerifier]")]
     public class AgeVerifier : Controller
@@ -30,5 +30,7 @@ namespace AgeVerfierWebApplication.AgeVerifierControllers
             }
             return new ObjectResult(item);
         }
+
+        // TODO: Add some more "GetBy..." methods, such as "Get all in state"
     }
 }
