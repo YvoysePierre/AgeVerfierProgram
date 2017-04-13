@@ -2,6 +2,7 @@
 
 namespace AgeVerifierWebApplication.AgeVerifierModels
 {
+    // TODO: interfaces begin with I, I changed this one already.
     public interface IAgeVerifierRepository
     {
         void Add(AgeVerifierItem item);

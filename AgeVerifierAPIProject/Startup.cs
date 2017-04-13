@@ -28,6 +28,7 @@ namespace AgeVerifierWebApplication
             // Add framework services.
             services.AddMvc();
 
+            // TODO: This is what's adding the database
             services.AddDbContext<AgeVerifierContext>(opt => opt.UseInMemoryDatabase());
 
             services.AddScoped<IAgeVerifierRepository, AgeVerifierRepository>();
