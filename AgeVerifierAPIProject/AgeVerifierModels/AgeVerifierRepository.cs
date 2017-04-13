@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace AgeVerfierWebApplication.AgeVerifierModels
+namespace AgeVerifierWebApplication.AgeVerifierModels
 {
-    public interface AgeVerifierRepository
+    public interface IAgeVerifierRepository
     {
         void Add(AgeVerifierItem item);
         IEnumerable<AgeVerifierItem> GetAll();

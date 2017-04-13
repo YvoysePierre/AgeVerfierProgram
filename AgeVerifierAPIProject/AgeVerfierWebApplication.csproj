@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <RuntimeIdentifier>win7-x86</RuntimeIdentifier>
+    <AssemblyName>AgeVerifierWebApplication</AssemblyName>
+    <RootNamespace>AgeVerifierWebApplication</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿using AgeVerfierWebApplication.AgeVerifierModels;
+﻿using AgeVerifierWebApplication.AgeVerifierModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -30,7 +30,7 @@ namespace AgeVerfierWebApplication
 
             services.AddDbContext<AgeVerifierContext>(opt => opt.UseInMemoryDatabase());
 
-            services.AddScoped<AgeVerifierRepository, AgeVerifier2Repository>();
+            services.AddScoped<IAgeVerifierRepository, AgeVerifierRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

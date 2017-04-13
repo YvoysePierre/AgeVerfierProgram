@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WebApplication1.InputWebPortal
+﻿namespace AgeVerfierWebApplication.AgeVerifierInputWebPortal
 {
     public class Class
     {

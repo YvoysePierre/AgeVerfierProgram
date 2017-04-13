@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using AgeVerfierWebApplication.AgeVerifierModels;
+using AgeVerifierWebApplication.AgeVerifierModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AgeVerfierWebApplication.AgeVerifierControllers
@@ -7,24 +7,23 @@ namespace AgeVerfierWebApplication.AgeVerifierControllers
     [Route("api/[AgeVerifier]")]
     public class AgeVerifier : Controller
     {
-        private readonly AgeVerifierRepository _ageVerifierRepositoryRepository;
-        private readonly AgeVerifierRepository _todoRepository;
+        private readonly IAgeVerifierRepository _ageVerifierRepository;
 
-        public AgeVerifier(AgeVerifierRepository todoRepository)
+        public AgeVerifier(IAgeVerifierRepository repo)
         {
-            _todoRepository = todoRepository;
+            _ageVerifierRepository = repo;
         }
 
         [HttpGet]
         public IEnumerable<AgeVerifierItem> GetAll()
         {
-            return _todoRepository.GetAll();
+            return _ageVerifierRepository.GetAll();
         }
 
         [HttpGet("{id}", Name = "AgeVerifier")]
         public IActionResult GetById(long id)
         {
-            var item = _todoRepository.Find(id);
+            var item = _ageVerifierRepository.Find(id);
             if (item == null)
             {
                 return NotFound();

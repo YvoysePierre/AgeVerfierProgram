@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AgeVerfierWebApplication.AgeVerifierModels
+namespace AgeVerifierWebApplication.AgeVerifierModels
 {
     public class AgeVerifierItem
     {

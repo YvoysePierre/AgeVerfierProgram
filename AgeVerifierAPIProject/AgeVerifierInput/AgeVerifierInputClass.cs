@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Xml;
 
-namespace WebApplication1.InputWebPortal
+namespace AgeVerfierWebApplication.AgeVerifierInput
 {
     public class AgeVerifierInputClass
     {

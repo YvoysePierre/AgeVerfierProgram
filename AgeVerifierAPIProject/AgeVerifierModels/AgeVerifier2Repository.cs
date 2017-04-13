@@ -1,18 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AgeVerfierWebApplication.AgeVerifierModels
+namespace AgeVerifierWebApplication.AgeVerifierModels
 {
-    public class AgeVerifier2Repository : AgeVerifierRepository
+    public class AgeVerifierRepository : IAgeVerifierRepository
     {
         private readonly AgeVerifierContext _context;
 
-        public AgeVerifier2Repository(AgeVerifierContext context)
+        public AgeVerifierRepository(AgeVerifierContext context)
         {
             _context = context;
-             
-            if (_context.AgeVerifier.Count() == 0)
-                Add(new AgeVerifierItem { Name = "Item1" });
         }
 
         public IEnumerable<AgeVerifierItem> GetAll()

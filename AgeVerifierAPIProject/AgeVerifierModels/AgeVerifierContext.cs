@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace AgeVerfierWebApplication.AgeVerifierModels
+namespace AgeVerifierWebApplication.AgeVerifierModels
 {
     public class AgeVerifierContext : DbContext
     {
